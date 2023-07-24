@@ -9,15 +9,15 @@ import Login from "./pages/Login";
 import Single from "./pages/Single";
 import Write from "./pages/Write";
 import Home from "./pages/Home";
-import NavBar from "./components/NavBar";
-import Footer from "./components/NavBar";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 import './styles.scss'
 
 function Layout() {
   return (
     <>
-      <NavBar />
+      <Navbar />
       <Outlet />
       <Footer />
     </>
@@ -46,7 +46,7 @@ const router = createBrowserRouter([
         element: <Write />
       },
     ]
-  }, ,
+  },
   {
     path: "/register",
     element: <Register />,
@@ -67,7 +67,7 @@ const router = createBrowserRouter([
   {
     path: "/home",
     element: <div>
-      <NavBar/>
+      <Navbar/>
       <Home/>,
       <Footer/>
     </div> ,
