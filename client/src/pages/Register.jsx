@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 
 function Register() {
-    const Api_URL = "http://localhost:3000/api/v1";
+    const Api_URL = import.meta.env.VITE_SERVER_BASE_URL;
 
     const [inputs, setInputs] = useState({
         username: "",
